@@ -1,0 +1,137 @@
+
+
+\documentclass[10pt,a4paper]{altacv}
+
+
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{eurosym}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{100000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sebe Msomi}
+\tagline{Jnr Software Developer}
+
+\photo{2.5cm}{Um_pic.jpg}
+\personalinfo{%
+ 
+  \email{zenandesebe@gmail.com}
+%   \phone{000-00-0000}
+  \mailaddress{10 Dorset street, Woodstock, Cape Town, 8001}
+  
+  \location{\hspace{0.05cm}  Cape Town} \hspace{0.3cm} 
+  \phone{+27 82 307-7662} 
+
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+
+\cvsection[page1sidebar]{Professional Experience}
+
+
+
+\cvevent{ Software Developer intern}{Microsoft App-Factory(Under Optisolutions)}{Oct 2020 -- Present}{Cape Town, 14 Strand St}
+\begin{itemize}
+\item Building software by writing efficient code
+\item Testing new software and fixing bugs. 
+\item Executing full life-cycle software development 
+\item Deploy programs on production and evaluate user feedback. 
+\item Work with senior developer to manage project for corporate clients. 
+\item Work on the User Interface and Design 
+
+
+\end{itemize}
+
+
+\divider
+
+
+\cvsection[page2sidebar]{Other Experience \& Internships}
+\cvevent{ABSA YOUNGLINGS}{Web Developer}{Dec 2019 -- Jan  2020}{Cape Town, Strand St}
+\begin{itemize}
+\item Create website layout/user interface by using standard HTML/CSS  
+\item Create mobile app using Xamarin 
+\end{itemize}
+
+
+\divider
+
+
+\cvevent{Teaching assistant}{ON The Ball College}{July 2019 -- Nov 2019}{Woodstock, Rochester}
+\begin{itemize}
+\item Teaching Java Object oriented Programming concepts 
+\item Tutoring SQL/PERL
+\item Conducted and presented research on Artificial Intelligence.
+  
+
+\end{itemize}
+\divider
+
+
+
+\cvsection {Selected Recent Projects}
+
+\begin{itemize}
+\item \underline{Leave Request Application:} Created a PowerApps Leave Request application for the employee to book their leave.
+
+\item \underline{Limited Of Authority:} 
+\item \underline{Fake News Application} 
+
+
+
+\end{itemize}
+\quad
+
+
+
+
+
+
+
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
